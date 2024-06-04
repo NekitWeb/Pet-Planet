@@ -1,0 +1,20 @@
+@import "../helpers/variables";
+
+.hero {
+  padding: 218px 0 245px;
+  color: $color-light;
+  background-color: $color-purple;
+  background-image: url("/img/bg-dog.png"),url("/img/pattern.svg");
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: bottom right, center;
+
+  &__title {
+    max-width: 810px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    max-width: 420px;
+  }
+}

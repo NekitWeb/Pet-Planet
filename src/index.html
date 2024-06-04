@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="./scss/style.scss">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img class="header__logo" src="img/logo.svg" alt="Логотип компании Pet Planet">
-    </div>
-  </header>
+<header class="header">
+  <div class="container">
+    <img class="header__logo" src="img/logo.svg" alt="Логотип компании Pet Planet">
+  </div>
+</header>
 
 <main>
   <section class="hero">
@@ -31,42 +31,53 @@
 
       <div class="about__box">
         <div class="about__content">
-          <p class="about__text">Мы&nbsp;&mdash; команда любящих и&nbsp;заботливых владельцев животных, которые
+          <p class="about__text">Мы&nbsp;&mdash; команда любящих и&nbsp;заботливых владельцев животных,
+            которые
             с&nbsp;особым вниманием относятся к&nbsp;потребностям и&nbsp;радостям наших пушистых друзей.
 
           <p class="about__text">Стремясь к&nbsp;тому, чтобы ваш питомец был здоровым, счастливым и&nbsp;полным
-          энергии, мы&nbsp;предлагаем только лучшие товары и&nbsp;услуги, проверенные временем и&nbsp;рекомендованные
-          ветеринарами.</p>
+            энергии, мы&nbsp;предлагаем только лучшие товары и&nbsp;услуги, проверенные временем и&nbsp;рекомендованные
+            ветеринарами.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="advantages">
-    <div class="container">
-      <h2 class="advantages__title">Наши преимущества</h2>
+    <div class="advantages__bg">
+      <div class="container">
+        <h2 class="advantages__title">Наши преимущества</h2>
 
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__subtitle">Широкий ассортимент</h3>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item_assortment">
+            <h3 class="advantages__subtitle">Широкий ассортимент</h3>
 
-          <p class="advantages__text">У&nbsp;нас есть все для того, чтобы сделать жизнь вашего любимца комфортной
-            и&nbsp;уютной.</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__subtitle">Качество и&nbsp;безопасность</h3>
+            <p class="advantages__text">У&nbsp;нас есть все для того, чтобы сделать жизнь вашего любимца
+              комфортной
+              и&nbsp;уютной.</p>
+          </li>
+          <li class="advantages__item advantages__item_quality">
+            <h3 class="advantages__subtitle">Качество и&nbsp;безопасность</h3>
 
-          <p class="advantages__text">Мы&nbsp;тщательно отбираем товары для наших клиентов, уделяя особое внимание
-            качеству и&nbsp;безопасности.</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__subtitle">Персональный подход</h3>
+            <p class="advantages__text">Мы&nbsp;тщательно отбираем товары для наших клиентов, уделяя особое
+              внимание
+              качеству и&nbsp;безопасности.</p>
+          </li>
+          <li class="advantages__item advantages__item_personal">
+            <h3 class="advantages__subtitle">Персональный подход</h3>
 
-          <p class="advantages__text">Мы&nbsp;понимаем, что каждый питомец уникален, поэтому предлагаем вам
-            индивидуальные рекомендации по&nbsp;выбору товаров..</p>
-        </li>
-      </ul>
+            <p class="advantages__text">Мы&nbsp;понимаем, что каждый питомец уникален, поэтому предлагаем
+              вам
+              индивидуальные рекомендации по&nbsp;выбору товаров..</p>
+          </li>
+        </ul>
+      </div>
+      <div class="advantages__count-box">
+        <p class="advantages__count">10</p>
+        <p class="advantages__count-text">магазинов&nbsp;в сети</p>
+      </div>
     </div>
+
   </section>
 
   <section class="subscribe">
@@ -76,9 +87,9 @@
       <form class="subscribe__form" action="#" method="post">
         <fieldset class="subscribe__fieldset">
           <label>
-            <input class="subscribe__input" type="email" name="email" placeholder="E-mail">
+            <input class="subscribe__input input" type="email" name="email" placeholder="E-mail">
           </label>
-          <button class="subscribe__btn" type="submit">Отправить</button>
+          <button class="subscribe__btn btn" type="submit">Отправить</button>
         </fieldset>
       </form>
     </div>
@@ -86,19 +97,19 @@
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <img src="img/logo.svg" alt="Логотип компании Pet Planet">
+  <div class="container footer__container">
+    <img class="footer__logo" src="img/logo.svg" alt="Логотип компании Pet Planet">
 
     <div class="footer__info">
       <p class="footer__copyright">&copy;Petshop, 2024</p>
       <p class="footer__text">Проект сделан в&nbsp;учебных целях</p>
 
       <ul class="footer__list">
-        <li class="footer__item">Designer:
+        <li class="footer__item_dev">Designer:
           <a class="footer__link" href="https://t.me/Mrshmallowww" target="_blank">Anastasia Ilina</a>
         </li>
 
-        <li class="footer__item">Developer:
+        <li class="footer__item_dev">Developer:
           <a class="footer__link" href="https://github.com/NekitWeb" target="_blank">Nikita Khveshchenko</a>
         </li>
       </ul>
@@ -107,20 +118,20 @@
     <address class="footer__contacts">
       <a class="footer__link-email" href="mailto:Petplanet@gmail.com">Petplanet@gmail.com</a>
 
-      <ul class="footer__list">
-        <li class="footer__item">
+      <ul class="footer__list_social">
+        <li class="footer__item_social">
           <a href="#" class="footer__link">
             <span class="icon icon_telegram" aria-label="Телеграм бот Pet Planet"></span>
           </a>
         </li>
 
-        <li class="footer__item">
+        <li class="footer__item_social">
           <a href="#" class="footer__link">
             <span class="icon icon_youtube" aria-label="YouTube канал Pet Planet"></span>
           </a>
         </li>
 
-        <li class="footer__item">
+        <li class="footer__item_social">
           <a href="#" class="footer__link">
             <span class="icon icon_vk" aria-label="Группа в VK Pet Planet"></span>
           </a>

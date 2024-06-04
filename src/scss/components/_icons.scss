@@ -1,0 +1,25 @@
+.icon {
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &_telegram {
+    background-image: url("/img/telegram.svg");
+    width: 32px;
+    height: 32px;
+  }
+
+  &_youtube {
+    background-image: url("/img/youtube.svg");
+    width: 32px;
+    height: 32px;
+  }
+
+  &_vk {
+    background-image: url("/img/vk.svg");
+    width: 32px;
+    height: 32px;
+  }
+}

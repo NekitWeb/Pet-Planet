@@ -1,0 +1,21 @@
+@import "../helpers/variables";
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  background-color: $color-purple;
+  border: 1px solid $color-purple;
+  border-radius: 40px;
+  color: $color-light;
+  padding: 16px 31px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/img/arrow-up.svg");
+  }
+}

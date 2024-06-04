@@ -1,0 +1,71 @@
+@import "../helpers/variables";
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 80px 0 32px;
+  background-color: $color-green;
+  background-image: url("/img/paw.svg");
+  background-repeat: no-repeat;
+  background-position: 41vw 50px;
+  color: $color-light;
+  font-size: 16px;
+
+  &__container {
+    display: grid;
+    grid-template-areas:
+    "logo contacts"
+    "info contacts";
+  }
+
+  &__logo {
+    grid-area: logo;
+    width: 331px;
+    margin-bottom: 50px;
+  }
+
+  &__info {
+    grid-area: info;
+  }
+
+  &__copyright {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 3px;
+  }
+
+  &__contacts {
+    grid-area: contacts;
+    justify-self: end;
+    font-style: normal;
+  }
+
+  &__link-email {
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    &_social {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  &__item {
+    &_dev:not(:last-child) {
+      margin-bottom: 3px;
+    }
+
+    &_social {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
